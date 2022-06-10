@@ -13,6 +13,20 @@
 </head>
 
 <body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://www.omirageevin.ml">main web</a>
+  <a href="https://clock.omirageevin.ml">clock(full screen)</a>
+  <a href="https://music.omirageevin.ml">music 24/7 stream(sinhala & english)</a>
+  <a href="https://weather.omirageevin.ml">Weather App</a>
+  <br>
+  <h1>more soon....</h1>
+</div>
+
+<span style="font-size:30px;cursor:pointer" color="black"
+ onclick="openNav()">&#9776; Other Webs</span>
+
     <div class="container">
         <div class="card wow fadeInUp" data-tilt>
             <img src="https://avatars.githubusercontent.com/u/92523621?v=4" class="wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.2s">
@@ -31,7 +45,15 @@
         </div>
     </div>
     <script src="assets/js/vanilla-tilt.js"></script>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
 </body>
 <script src="assets/js/wow.min.js"></script>
